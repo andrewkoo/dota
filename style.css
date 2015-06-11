@@ -30,9 +30,15 @@ body {
 }
 
 .bar {
-  fill: steelblue;
+  fill: #a9100d;
+  opacity: .7;
+  stroke-width: 0;
 }
 
 .bar:hover {
-  fill: brown;
+  fill: #a9100d;
+  stroke-width: .5;
+  stroke: #000;
+  opacity: 1;
+  transition: .1s;
 }
