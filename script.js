@@ -317,7 +317,12 @@ function processData(caller) {
     } else if (iteration <= 0) {
         iteration = 0;
     }
-    currData = concatData(iteration);
+    
+    if (iteration >= 5) {
+        currData = concatData(4);
+    } else {
+        currData = concatData(iteration);
+    }
 }
 
 function updateTracker() {
