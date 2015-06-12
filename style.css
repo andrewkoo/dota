@@ -13,6 +13,10 @@ body {
     shape-rendering: crispEdges;
 }
 
+.y.axis path {
+    stroke: none;
+}
+
 .dot {
     stroke: none;
     opacity: .75;
@@ -27,18 +31,23 @@ body {
 .tooltip {
     background: rgba(255,255,255,.75);
     padding: 5px;
+    font: 16px sans-serif;
 }
 
 .bar {
   fill: #a9100d;
-  opacity: .7;
+  opacity: .75;
   stroke-width: 0;
 }
 
 .bar:hover {
   fill: #a9100d;
-  stroke-width: .5;
+  stroke-width: 2;
   stroke: #000;
-  opacity: 1;
   transition: .1s;
+  opacity: 1;
+}
+
+.trackingAxis path {
+    display: none;
 }

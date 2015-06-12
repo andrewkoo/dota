@@ -9,20 +9,21 @@
     </head>
     <body>
         <h1>DotA 2 Tournament Prize Pools</h1>
-        <div id="increment">
-            <input name="incrementButton" 
+        <div class="buttons">
+            <input class ="button"
+                   name="decrementButton" 
                    type="button" 
-                   value=">>" 
-                   onclick="increment()" />
-        </div>
-        
-        <div id="decrement">
-            <input name="decrementButton" 
-                   type="button" 
-                   value="<<" 
+                   value="Prev" 
                    onclick="decrement()" />
-        </div
-
+            
+            <input class ="button"
+                   name="incrementButton" 
+                   type="button" 
+                   value="Next" 
+                   onclick="increment()" />
+            
+            
+        </div>
     </body>
     <script type="text/javascript" src="script.js"></script>
 </html>
