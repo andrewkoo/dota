@@ -79,7 +79,6 @@ var trackingBar = d3.svg.axis()
     .scale(trackScale)
     .orient("bottom")
     .tickFormat(function(i) { return labels[i]; });
-<<<<<<< HEAD
 var tracker = d3.select(".container").append("svg")
     .attr("width", width+margin.left)
     .attr("height", 30)
