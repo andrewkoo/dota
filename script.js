@@ -1,7 +1,9 @@
 // Constants
 var margin = {top: 50, right: 50, bottom: 50, left: 50},
+
     width = 800 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom,
+
     csv = [], // Nested data (index by year)
     currData = [],
     sums = [],
@@ -9,6 +11,7 @@ var margin = {top: 50, right: 50, bottom: 50, left: 50},
     largestIteration = [true, true, true, true, true, true],
     caller = -1; // Increment and decrement flag
 var parseDate = d3.time.format("%m/%d/%y").parse;    
+
 
 function updateDesc() {
     var descs = ["The first edition of <b>The International</b> was hosted by Valve in 2011. With an unprecedented prize pool of $1.6 million, it became the largest prize pool in electronic sports history.",
@@ -29,7 +32,6 @@ function updateDesc() {
         .duration(750)
         .style("opacity", 1);
 }
-
 updateDesc();
 
 // Tooltip
@@ -58,7 +60,6 @@ var x = d3.time.scale()
     .range([0, width]);
 var r = d3.scale.linear()
     .range([8, 40]);
-
 var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom")
@@ -78,6 +79,7 @@ var trackingBar = d3.svg.axis()
     .scale(trackScale)
     .orient("bottom")
     .tickFormat(function(i) { return labels[i]; });
+<<<<<<< HEAD
 var tracker = d3.select(".container").append("svg")
     .attr("width", width+margin.left)
     .attr("height", 30)

@@ -19,7 +19,11 @@ body {
 
 .dot {
     stroke: none;
+<<<<<<< HEAD
     opacity: .5;
+=======
+    opacity: .75;
+>>>>>>> 7dec2f14fb99ac4bbc5a48b6152be4c0dd1c0644
 }
 
 .dot:hover {;
@@ -29,6 +33,7 @@ body {
 }
 
 .tooltip {
+<<<<<<< HEAD
     background: rgba(255,255,255,.95);
     padding: 5px;
     font: 12px sans-serif;
@@ -36,20 +41,37 @@ body {
 
 .bar {
   fill: #b00;
+=======
+    background: rgba(255,255,255,.75);
+    padding: 5px;
+    font: 16px sans-serif;
+}
+
+.bar {
+  fill: #a9100d;
+>>>>>>> 7dec2f14fb99ac4bbc5a48b6152be4c0dd1c0644
   opacity: .75;
   stroke-width: 0;
 }
 
 .bar:hover {
+<<<<<<< HEAD
   fill: #b00;
 /*  stroke-width: 2;*/
   stroke: #000;
   transition: 1s;
+=======
+  fill: #a9100d;
+  stroke-width: 2;
+  stroke: #000;
+  transition: .1s;
+>>>>>>> 7dec2f14fb99ac4bbc5a48b6152be4c0dd1c0644
   opacity: 1;
 }
 
 .trackingAxis path {
     display: none;
+<<<<<<< HEAD
 }
 
 #button2{
@@ -69,4 +91,6 @@ body {
     position: absolute;
     top: 100px;
     left: 100px;
+=======
+>>>>>>> 7dec2f14fb99ac4bbc5a48b6152be4c0dd1c0644
 }
